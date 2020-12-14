@@ -1,0 +1,26 @@
+.available {
+  padding: 3rem;
+  // main page grid
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows: repeat(3,auto);
+  grid-gap: 3rem;
+  // style, spacing and positioning
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #CCB8E8;
+	background-attachment: fixed;
+	background-size: cover;
+  color: #412272;
+  height: 50vh;
+}
+
+.now {
+  grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.stores {
+grid-column: 2;
+    grid-row: 2;
+}

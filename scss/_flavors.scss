@@ -1,0 +1,63 @@
+.flavors {
+  width: 80%;
+  margin: 3rem auto;
+  line-height: 1.4;
+  height: 50vh;
+}
+
+.flavors nav {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content: start;
+  grid-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.flavors nav a {
+  padding: .75rem 1.25rem;
+  text-decoration: none;
+  color: #412272;
+  background-color: #CDB7E8;
+  border-radius: .25rem;
+  transition: background .1s;
+font-size: .5rem;
+  line-height: .5rem;
+  @media screen and (min-width:40em){
+    font-size: .8rem;
+          line-height: .8rem;
+
+  }
+  @media screen and (min-width:64em){
+    font-size: 1rem;
+      line-height: 1rem;
+
+  }
+  }
+
+.flavors nav a:hover {
+  background-color: #412272;
+  color: #CDB7E8;
+}
+
+.flavors nav a.currr {
+  background-color: #412272;
+  color: #CDB7E8;
+}
+
+.tab-content {
+  margin-bottom: 1.5rem;
+  padding: 2.5rem;
+  background-color: #CDB7E8;
+  color: #412272;
+  border-radius: .25rem;
+}
+
+.tab-content h1 {
+  margin-top: 0;
+  color: #412272;
+}
+
+.tab-content p {
+  margin-bottom: 0;
+  color: #412272;
+}

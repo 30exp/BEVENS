@@ -1,0 +1,27 @@
+.third {
+  padding: 3rem;
+  // main page grid
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(5,1fr);
+  grid-gap: 3rem;
+  // style, spacing and positioning
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #CCB8E8;
+	background-attachment: fixed;
+	background-size: cover;
+  color: #412272;
+  height: 100vh;
+}
+
+.left {
+grid-column: 1;
+    grid-row: 2;
+        list-style: none;
+}
+
+.right {
+grid-column: 2;
+    grid-row: 3;
+        list-style: none;
+}

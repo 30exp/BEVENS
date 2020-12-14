@@ -1,0 +1,45 @@
+@import 'var';
+@import 'gen';
+@import 'flavors';
+@import 'first';
+@import 'second';
+@import 'third';
+@import 'fourth';
+@import 'avail';
+
+.mango,
+.kiwi,
+.coco, {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    h4 {
+      padding-top: 1rem;
+      border-top: 1px solid #412272;
+      color: #412272;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    p {
+      color: #412272;
+    }
+  }
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  //transition: all .4s;
+  p {
+    margin-bottom: 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.more {
+  max-height: 100rem; // just a high number
+}

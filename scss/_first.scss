@@ -1,0 +1,144 @@
+.first {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: #CCB8E8;
+  background-color: #CCB8E8;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-family: arpona, serif; font-weight: 900; font-style: normal;  
+  font-size: 2rem;
+  line-height: 1.5rem;
+  @media screen and (min-width:40em){
+    font-size: 3rem;
+      line-height: 2.3rem;
+
+  }
+  @media screen and (min-width:64em){
+    font-size: 4rem;
+          line-height: 3rem;
+
+  }
+}
+
+h4 {
+    font-family: arpona, serif; font-weight: 500; font-style: normal;
+    font-size: .8rem;
+    line-height: .8rem;
+    @media screen and (min-width:40em){
+    font-size: 1rem;
+      line-height: 1rem;
+
+  }
+  @media screen and (min-width:64em){
+    font-size: 1.2rem;
+          line-height: 1.2rem;
+        }
+
+
+}
+
+p {
+  margin: 0;
+  font-family: arpona, serif; font-weight: 500; font-style: normal;
+  font-size: .5rem;
+  line-height: .5rem;
+  @media screen and (min-width:40em){
+    font-size: .8rem;
+          line-height: .8rem;
+
+  }
+  @media screen and (min-width:64em){
+    font-size: 1rem;
+      line-height: 1rem;
+
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #CCB8E8;
+  font-family: arpona, serif; font-weight: 500; font-style: normal;
+  font-size: .5rem;
+  @media screen and (min-width:40em){
+    font-size: .5rem;
+  }
+  @media screen and (min-width:64em){
+    font-size: 1rem;
+  }
+}
+
+.shape {
+  grid-column: 3 / span 10;
+  grid-row: 1 / span 8;
+  background-color: #412272;
+  @media screen and (min-width:40em){
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 12;
+  }
+  @media screen and (min-width:64em){
+    grid-row: 1 / span 12;
+  }
+}
+
+main {
+  text-align: right;
+  grid-column: 2 / span 10;
+  grid-row: 3 / span 4;
+  @media screen and (min-width:40em){
+    grid-column: 7 / span 5;
+    grid-row: 3 / span 3;
+  }
+  p {
+    font-weight: 400;
+    @media screen and (min-width:40em){
+    }
+  }
+}
+
+header {
+  /* placement from main grid */
+  grid-column: 2 / span 10;
+  grid-row: 1;
+  /* new grid for this element */
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: end;
+  /* type style for all header */
+  font-size: .875rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  nav {
+    justify-self: end;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: right;
+      li {
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.caption {
+  grid-row: 10;
+  grid-column: 2 / span 4;
+  color: #412272;
+  @media screen and (min-width:40em){
+    grid-row: 12;
+    grid-column: 3 / span 4;
+    padding-right: 2rem;
+    text-align: right;
+  }
+}
+
+.logo {
+  color: #412272;
+}
